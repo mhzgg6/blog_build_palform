@@ -1,0 +1,9 @@
+@import "./themes.scss";
+
+@each $themename, $theme in $themes {
+  @each $key, $value in $theme {
+    :export {
+      #{$themename}___#{$key}: $value;
+    }
+  }
+}

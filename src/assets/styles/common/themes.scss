@@ -1,0 +1,18 @@
+$themes: (
+  // 黑色主题
+  dark-theme: 
+    (
+      //页面底色
+      page_background: #333333,
+      //一级色
+      main: #000000,
+    ),
+  // 白天主题
+  light-theme: 
+    (
+      //页面底色
+      page_background: #f4f4f4,
+      //一级色
+      main: #ffffff,
+    ),
+) !default;

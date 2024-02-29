@@ -10,5 +10,7 @@ import {} from "vue"
 .box {
   width: 100px;
   color: $fontColorForPc;
+  padding: $padding_1;
+  @include background-theme("normal");
 }
 </style>

@@ -1,1 +1,15 @@
+@import "./themes.scss";
+@import "./mixins.scss";
 @import "./variable.scss";
+
+
+// body {
+//   * {
+//     outline: none;
+//   }
+//   @each $themename, $theme in $themes {
+//     &.#{$themename} {
+//       background-color: map-get($map: $theme, $key: "page_background");
+//     }
+//   }
+// }
