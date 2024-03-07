@@ -2,9 +2,10 @@ import { createApp } from "vue"
 import App from "./App.vue"
 
 import "./assets/styles/common/var.scss"
-import "./assets/styles/common/index.js"
+import themesConfig from "./assets/styles/common"
 
 import router from "./router/index"
+console.log(themesConfig);
 
 const app = createApp(App)
 
