@@ -11,6 +11,6 @@ import {} from "vue"
   width: 100px;
   color: $fontColorForPc;
   padding: $padding_1;
-  @include background-theme("normal");
+  @include background-theme("main");
 }
 </style>

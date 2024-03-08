@@ -1,4 +1,5 @@
 import { ref } from "vue"
+import { getThemeVar, addThemeStyle } from "./setTheme"
 interface State {
   themeConfig: object
   setting: object
@@ -6,8 +7,9 @@ interface State {
 }
 
 const bodyClass = document.body.classList
+const el = null
 
-export function setThemes(themeConfig) {
+export function setTheme(themeConfig) {
   const state = ref<State>({
     themeConfig,
     setting: {
@@ -16,18 +18,8 @@ export function setThemes(themeConfig) {
     currentTheme: {},
   })
   state.value.currentTheme = state.value.themeConfig[state.value.setting.theme]
-
-  const setThemeVar = () => {
-    let arr = []
-    let styleEl = null
-    styleEl = document.createElement("style")
-    document.head.appendChild(styleEl)
-    for (let key in state.value.currentTheme) {
-      arr.push(`--t--${key}:${state.value.currentTheme[key]};`)
-    }
-    styleEl.innerHTML = `:root{${arr.join("")}}`
-  }
-
   bodyClass.add(state.value.setting.theme)
-  setThemeVar()
+
+  const themeVar = getThemeVar(state.value.currentTheme)
+  addThemeStyle(el, themeVar)
 }
