@@ -1,6 +1,6 @@
 export function getThemeVar(theme) {
-  let themeVars = []
-  for (let key in theme) {
+  const themeVars: string[] = []
+  for (const key in theme) {
     themeVars.push(`--t--${key}:${theme[key]};`)
   }
   return `:root{${themeVars.join("")}}`
