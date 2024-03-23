@@ -5,6 +5,7 @@ import "./assets/styles/common/var.scss"
 import themesConfig from "./assets/styles/common"
 import { setTheme } from "./utils/initTheme"
 import router from "./router/index"
+import "./assets/styles/index.scss"
 
 const app = createApp(App)
 
