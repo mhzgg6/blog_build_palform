@@ -5,7 +5,7 @@ const routes = [
   },
   {
     path: "/pc/designer",
-    component: () => import("@/designer/views/designer.vue"), //路由懒加载
+    component: () => import("@/designer/views/designer.vue"),
   },
 ]
 

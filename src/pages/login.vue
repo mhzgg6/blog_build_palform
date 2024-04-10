@@ -4,6 +4,7 @@
 
 <script setup>
 import {} from "vue"
+console.log(1111)
 </script>
 
 <style lang="scss" scoped>

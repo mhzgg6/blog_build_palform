@@ -11,6 +11,8 @@
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx --max-warnings 0"
   },
   "dependencies": {
+    "@types/uuid": "^9.0.8",
+    "uuid": "^9.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.3.0"
   },

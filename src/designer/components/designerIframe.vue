@@ -11,7 +11,7 @@
         </div>
 
         <div class="designer-main">
-          <slot name="left"></slot>
+          <slot></slot>
         </div>
 
         <div class="designer-right">
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-
+import mhzDesignerLeft from "../components/designerLeft.vue"
 </script>
 
 <style scoped></style>
