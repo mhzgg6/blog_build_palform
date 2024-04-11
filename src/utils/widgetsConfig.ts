@@ -4,13 +4,27 @@ const widgetsConfigs = [
   {
     id: uuid4(),
     title: "容器",
-    type: 2,
+    type: "container",
     items: [
       {
         id: uuid4(),
-        name: "",
+        name: "栅格",
         options: {
-          groupName: "栅格",
+          groupName: "容器",
+        },
+      },
+      {
+        id: uuid4(),
+        name: "表格",
+        options: {
+          groupName: "容器",
+        },
+      },
+      {
+        id: uuid4(),
+        name: "页面段落",
+        options: {
+          groupName: "容器",
         },
       },
     ],
@@ -18,7 +32,7 @@ const widgetsConfigs = [
   {
     id: uuid4(),
     title: "表单",
-    type: 2,
+    type: "form",
     items: [
       {
         id: uuid4(),
